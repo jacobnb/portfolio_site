@@ -13,9 +13,18 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes: Routes = [
-  { path: 'path', component: AppComponent }
+  { path: 'path', component: AppComponent },
+  {path: 'aboutMe', component: AboutMeComponent},
+  {path: 'portfolio', component: PortfolioComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'skills', component: SkillsComponent},
+  {path: 'resume', component: ResumeComponent},
+  {path: 'contactMe', component: ContactComponent}
 ];
 @NgModule({
   declarations: [
@@ -28,7 +37,10 @@ const appRoutes: Routes = [
     BlogComponent,
     ContactComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PortfolioComponent,
+    SkillsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
