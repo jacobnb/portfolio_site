@@ -1,5 +1,7 @@
 <div *ngFor="let project of projects; let i = index">
 <app-project-display 
-(imageSource)="images[i]"
-(description)="descriptions[i]"></app-project-display>
+[imageSource]="images[i]"
+[description]="descriptions[i]"
+[title]="titles[i]">
+</app-project-display>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-project-display',
@@ -9,7 +9,7 @@ export class ProjectDisplayComponent implements OnInit {
   // Neither of these are working right now
   @Input() imageSource: string = "default";
   @Input() description: string = "Default Description";
-
+  @Input() title: string = "Default Title";
   constructor() { }
 
   ngOnInit() {
