@@ -18,6 +18,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes: Routes = [
+  {path: '', component: PortfolioComponent},
   { path: 'path', component: AppComponent },
   {path: 'aboutMe', component: AboutMeComponent},
   {path: 'portfolio', component: PortfolioComponent},
